@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#registration">Pendaftaran</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <h1>OSIS</h1>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Selamat Datang di Pendaftaran OSIS</h2>
+            <p>OSIS (Organisasi Siswa Intra Sekolah) adalah organisasi yang membantu mengembangkan keterampilan
+                kepemimpinan dan kerjasama siswa. Kami mengundang semua siswa untuk bergabung dan menjadi bagian dari
+                tim kami. Bergabunglah dengan kami untuk mengembangkan keterampilan, berpartisipasi dalam berbagai
+                kegiatan, dan berkontribusi pada komunitas sekolah.</p>
+            <img src="school.jpg" alt="Kegiatan OSIS">
+        </div>
+    </section>
+
+    <main id="registration">
+        <form id="registrationForm">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="grade">Kelas:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Pilih Kelas</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="motivation">Alasan Bergabung:</label>
+            <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+            <button type="submit">Daftar</button>
+        </form>
+        <div id="message"></div>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 Sekolah Kami. Semua hak dilindungi.</p>
+    </footer>
+</body>
+
+</html>
